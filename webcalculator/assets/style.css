@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 
     /* properti pendukung */
-    min-width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: right;
 }
