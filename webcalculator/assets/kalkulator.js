@@ -36,6 +36,7 @@ function handleOperator(operator) {
         calculator.operator = operator;
         calculator.isWaitForSecondNumber = true;
         calculator.firstNumber = calculator.displayNumber;
+        calculator.secondNumber = calculator.displayNumber;
 
         //mengatur ulang nilai display number supaya tombol selanjutnya dimulai dari angka pertama kali
         calculator.displayNumber = '0';
@@ -46,7 +47,7 @@ function handleOperator(operator) {
 
 function performCalculation() {
     if (calculator.firstNumber == null || calculator.operator == null) {
-        alerr('Anda belum menetapkan operator');
+        alert('Anda belum menetapkan operator');
         return;
     }
 
@@ -57,7 +58,17 @@ function performCalculation() {
         result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
     }
 
+    //objek yang akan dikirimkan sebagai argumen fungsi putHistory()
+    const history = {
+        firstNumber: calculator.firstNumber,
+        secondNumber: calculator.secondNumber,
+        operator: calculator.operator,
+        result: result
+    }
+
+    putHistory(history);
     calculator.displayNumber = result;
+    renderHistory();
 }
 
 const buttons = document.querySelectorAll('.button');
