@@ -67,7 +67,7 @@ nav a:hover {
 }
 
 #beranda h2 {
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: bold;
     color: red;
 }
