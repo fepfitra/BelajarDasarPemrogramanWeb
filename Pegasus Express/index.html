@@ -12,15 +12,15 @@
         <!-- jumbotron -->
         <!-- navigation bar -->
         <nav>
-            <!-- svg -->
-            <svg width="70px" height="70px">
-                <image xlink:href="assets/images/express.svg" width="60" height="60" />
-            </svg>
+            <!-- image -->
+            <img src="/assets/images/express.png" width="60px">
+            <!-- <svg width="70px" height="70px">
+                <image xlink:href="assets/images/express1.svg" width="60" height="60" />
+            </svg> -->
             <ul>
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#fitur">Fitur</a></li>
                 <li><a href="#tentangKami">Tentang Kami</a></li>
-                <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
     </header>
@@ -39,53 +39,84 @@
                     <h1>To infinity and beyond</h1>
                     <h2>Kurir andalan anda</h2>
                     <p>Semua dapat kami lakukan untuk menembus kemustahilan untuk membuat paket and sampai dengan cepat</p>
+                    <a id="button" href="#tentangkami">
+                        Tentang Kami
+                    </a>
                 </section>
 
             </article>
             <!-- fitur -->
             <article id="fitur">
-                <section class="fitur card">
-                    <h2>Dapat Terbang</h2>
-                </section>
-                <section class="fitur card">
-                    <h2>Paket sampai sebelum dipesan</h2>
-                </section>
-                <section class="fitur card">
-                    <h2>Kurir ramah bintang 5</h2>
-                </section>
-                <section class="fitur card">
-                    <h2>Boleh minjem pegasus</h2>
-                </section>
+                <div class="title">
+                    <h2>Fitur</h2>
+                </div>
+                <div id="fitur-flex">
+                    <section class="fitur-card">
+                        <h3>Dapat Terbang</h3>
+                        <p>Yaa namanya pake quda pegasus</p>
+                    </section>
+                    <section class="fitur-card">
+                        <h3>Paket sampai sebelum dipesan</h3>
+                        <p>Kami bisa meramal paket apa yang anda pesan</p>
+                    </section>
+                    <section class="fitur-card">
+                        <h3>Kurir ramah bintang 5</h3>
+                        <p>Kami turuti semua kemauan anda dan ikutan unboxing paket untuk memastikan keamanan dan tanggung jawab kami</p>
+                    </section>
+                    <section class="fitur-card">
+                        <h3>Boleh minjem pegasus</h3>
+                        <p>Hati-hati jangan sampai hilang loh ya, carinya susah tu</p>
+                    </section>
+                </div>
             </article>
+                
             <!-- tentangKami -->
             <article id="tentangKami">
-                <section>
-                    <p>Hustler</p>
-                    <h3>Fitriansyah Eka Putra</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto laboriosam delectus porro omnis recusandae, tempore sint, ratione asperiores soluta veniam earum repellendus natus nihil, dolore rerum odit laborum obcaecati.</p>
-                </section>
-                <section>
-                    <p>Hipster</p>
-                    <h3>Fitriansyah Eka Putra</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto laboriosam delectus porro omnis recusandae, tempore sint, ratione asperiores soluta veniam earum repellendus natus nihil, dolore rerum odit laborum obcaecati.</p>
-                </section>
-                <section>
-                    <p>Hacker</p>
-                    <h3>Fitriansyah Eka Putra</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto laboriosam delectus porro omnis recusandae, tempore sint, ratione asperiores soluta veniam earum repellendus natus nihil, dolore rerum odit laborum obcaecati.</p>
-                </section>
-            </article>
-
-            <!-- kontak -->
-            <article id="kontak">
-                <section>
-                    <p>Jalan Antah Barantah</p>
-                    <p>08 berapa?</p>
-                    <p>fitra.fep@gmail.com</p>
-                </section>
+                <div class="title">
+                    <h2>Tentang Kami</h2>
+                </div>
+                <div id="tentangkami-flex">
+                    <section>
+                        <p>Hustler</p>
+                        <img src="/assets/images/fep.png" class="round" width="100px">
+                        <h3>Fitriansyah Eka Putra</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto laboriosam delectus porro omnis recusandae, tempore sint.</p>
+                    </section>
+                    <section>
+                        <p>Hipster</p>
+                        <img src="/assets/images/fep.png" class="round" width="100px">
+                        <h3>Fitriansyah Eka Putra</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto laboriosam delectus porro omnis recusandae, tempore sint.</p>
+                    </section>
+                    <section>
+                        <p>Hacker</p>
+                        <img src="/assets/images/fep.png" class="round" width="100px">
+                        <h3>Fitriansyah Eka Putra</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto laboriosam delectus porro omnis recusandae, tempore sint.</p>
+                    </section>
+                </div>
             </article>
             <!-- biodata (aside) -->
-
+            <aside>
+                <div id="biodata">
+                    <img src="/assets/images/fep.png" class="round" width="100px">
+                    <h3>Fitriansyah Eka Putra</h3>
+                    <h6>Condong catur, Sleman, D.I.Y</h6>
+                    <p>Tertekan developer and <br/>tidur</p>      
+                    <div class="skills">
+                        <h6>Skills</h6>
+                        <ul>
+                            <li>Makan</li>
+                            <li>Tidur</li>
+                            <li>Bengong</li>
+                            <li>Ngising</li>
+                            <li>Ngorok</li>
+                            <li>Sleepwalking</li>
+                            <li>Melamun</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
         </div>
     </body>
     <footer>

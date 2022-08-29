@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/* reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    background-color: #232323;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+}
+
+nav img {
+    padding-top: 5px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    color: white;
+}
+
+#beranda {
+    padding: 50px 50px 10px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+}
+
+#button {
+    background-color: #232323;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#fitur, #tentangKami {
+    padding: 80px 50px 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    background-color: #232323;
+}
+
+.title {
+    padding-bottom: 20px;
+    color: white;
+}
+
+#fitur-flex, #tentangkami-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fitur-card, #tentangKami section{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+    background-color: black
+}
+.fitur-card{
+    height: 100px;
+}
+
+.fitur-card h3, .fitur-card p, #tentangKami section h3, #tentangKami section p {
+    color: white;
+}
+
+
+#biodata {
+	background-color: #232323;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.round {
+	border-radius: 50%;
+	padding: 7px;
+}
+
+.skills {
+	background-color: #000000;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #7e7e80;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #232323;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+}
+
+@media screen and (max-width: 700px) {
+    #beranda{
+        flex-direction: column;
+    }
+}
