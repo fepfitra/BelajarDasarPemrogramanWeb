@@ -33,7 +33,7 @@ body{
 nav {
     background-color: #232323;
     position: fixed;
-    width: 90vw;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,6 +51,7 @@ nav ul {
     align-items: center;
     column-gap: 40px;
     color: white;
+    margin-right: 70px;
 }
 
 #beranda {
