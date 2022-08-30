@@ -58,10 +58,33 @@ nav img {
 
 .dropdown{
     display: none;
+    align-items: center;
+    column-gap: 40px;
+    color: white;
+    margin-right: 70px;
     float: left;
     overflow: hidden;
 }
 
+#dropdown-list{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    right: 0;
+    z-index: 1;
+}
+
+.dropbtn{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: #232323;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
 #beranda {
     padding: 50px 50px 10px 50px;
@@ -118,6 +141,10 @@ nav img {
     padding: 30px;
     background-color: black;
     transition: transform .2s;
+    -webkit-transition: transform .2s;
+    -moz-transition: transform .2s;
+    -ms-transition: transform .2s;
+    -o-transition: transform .2s;
 }
 
 .fitur-card:hover, #tentangKami section:hover{
@@ -209,29 +236,5 @@ footer {
 
     .dropdown {
         display: flex;
-        align-items: center;
-        column-gap: 40px;
-        color: white;
-        margin-right: 70px;
-    }
-
-    #dropdown-list{
-        display: none;
-        position: absolute;
-        min-width: 160px;
-        overflow: auto;
-        right: 0;
-        z-index: 1;
-    }
-
-    .dropbtn{
-        font-family: 'Quicksand', sans-serif;
-        font-size: 16px;
-        background-color: white;
-        color: #232323;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
     }
 }
