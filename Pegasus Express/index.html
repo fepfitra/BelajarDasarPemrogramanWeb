@@ -13,15 +13,23 @@
         <!-- navigation bar -->
         <nav>
             <!-- image -->
-            <img src="/assets/images/express.png" width="60px">
-            <!-- <svg width="70px" height="70px">
+            <img src="/assets/images/express.png" alt="express white" width="60px">
+            <!--<svg width="70px" height="70px">
                 <image xlink:href="assets/images/express1.svg" width="60" height="60" />
             </svg> -->
-            <ul>
+            <ul class="navigation">
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#fitur">Fitur</a></li>
                 <li><a href="#tentangKami">Tentang Kami</a></li>
             </ul>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <ul id="dropdown-list" class="dropdown-content show">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#fitur">Fitur</a></li>
+                    <li><a href="#tentangKami">Tentang Kami</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -122,5 +130,6 @@
     <footer>
         <p>Copyright &#169; 2022, Fitriansyah Eka Putra</p>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

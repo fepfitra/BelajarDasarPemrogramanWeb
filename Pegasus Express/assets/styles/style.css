@@ -31,6 +31,7 @@ body{
 }
 
 nav {
+    overflow: hidden;
     background-color: #232323;
     position: fixed;
     width: 100vw;
@@ -46,13 +47,21 @@ nav img {
     padding-top: 5px;
 }
 
-nav ul {
+
+.navigation {
     display: flex;
     align-items: center;
     column-gap: 40px;
     color: white;
     margin-right: 70px;
 }
+
+.dropdown{
+    display: none;
+    float: left;
+    overflow: hidden;
+}
+
 
 #beranda {
     padding: 50px 50px 10px 50px;
@@ -70,6 +79,8 @@ nav ul {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.show {display: block;}
 
 #fitur, #tentangKami {
     padding: 80px 50px 100px 50px;
@@ -190,5 +201,37 @@ footer {
 @media screen and (max-width: 700px) {
     #beranda{
         flex-direction: column;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        color: white;
+        margin-right: 70px;
+    }
+
+    #dropdown-list{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        overflow: auto;
+        right: 0;
+        z-index: 1;
+    }
+
+    .dropbtn{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        background-color: white;
+        color: #232323;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
     }
 }
