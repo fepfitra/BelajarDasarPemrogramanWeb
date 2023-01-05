@@ -1,3 +1,3 @@
 # PegasusExpress
 
-![Overview]{./assets/images/final.gif}
+![Overview](./assets/images/final.gif)

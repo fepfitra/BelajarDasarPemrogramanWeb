@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- jumbotron -->
+        <!-- navigation bar -->
+        <nav>
+            <!-- image -->
+            <img src="/assets/images/express.png" alt="express white" width="60px">
+            <!--<svg width="70px" height="70px">
+                <image xlink:href="assets/images/express1.svg" width="60" height="60" />
+            </svg> -->
+            <ul class="navigation">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#fitur">Fitur</a></li>
+                <li><a href="#tentangKami">Tentang Kami</a></li>
+            </ul>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <ul id="dropdown-list" class="dropdown-content">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#fitur">Fitur</a></li>
+                    <li><a href="#tentangKami">Tentang Kami</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- content -->
+        <div id="content">
+            <!-- beranda -->
+            <article id="beranda">
+                <section id="beranda-bigicon">
+                    <svg width="400" height="400">
+                        <image xlink:href="assets/images/express.svg" width="400" height="400" />
+                    </svg>
+                </section>
+                <section id="beranda-text">
+                    <h1>To infinity and beyond</h1>
+                    <h2>Kurir andalan anda</h2>
+                    <p>Semua dapat kami lakukan untuk menembus kemustahilan untuk membuat paket and sampai dengan cepat</p>
+                    <a id="button" href="#tentangKami">
+                        Tentang Kami
+                    </a>
+                </section>
+
+            </article>
+            <!-- fitur -->
+            <article id="fitur">
+                <div class="title">
+                    <h2>Fitur</h2>
+                </div>
+                <div id="fitur-flex">
+                    <section class="fitur-card">
+                        <h3>Dapat Terbang</h3>
+                        <p>Yaa namanya pake quda pegasus</p>
+                    </section>
+                    <section class="fitur-card">
+                        <h3>Paket sampai sebelum dipesan</h3>
+                        <p>Kami bisa meramal paket apa yang akan anda pesan</p>
+                    </section>
+                    <section class="fitur-card">
+                        <h3>Kurir ramah bintang 5</h3>
+                        <p>Kami turuti semua kemauan anda dan ikutan unboxing paket untuk memastikan keamanan dan tanggung jawab kami</p>
+                    </section>
+                    <section class="fitur-card">
+                        <h3>Boleh minjem pegasus</h3>
+                        <p>Hati-hati jangan sampai hilang loh ya, carinya susah tu</p>
+                    </section>
+                </div>
+            </article>
+                
+            <!-- tentangKami -->
+            <article id="tentangKami">
+                <div class="title">
+                    <h2>Tentang Kami</h2>
+                </div>
+                <div id="tentangkami-flex">
+                    <section>
+                        <p>Hustler</p>
+                        <img src="/assets/images/fep.png" class="round" width="100px">
+                        <h3>Fitriansyah Eka Putra</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto laboriosam delectus porro omnis recusandae, tempore sint.</p>
+                    </section>
+                    <section>
+                        <p>Hipster</p>
+                        <img src="/assets/images/fep.png" class="round" width="100px">
+                        <h3>Fitriansyah Eka Putra</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto laboriosam delectus porro omnis recusandae, tempore sint.</p>
+                    </section>
+                    <section>
+                        <p>Hacker</p>
+                        <img src="/assets/images/fep.png" class="round" width="100px">
+                        <h3>Fitriansyah Eka Putra</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque architecto laboriosam delectus porro omnis recusandae, tempore sint.</p>
+                    </section>
+                </div>
+            </article>
+            <!-- biodata (aside) -->
+            <aside>
+                <div id="biodata">
+                    <img src="/assets/images/fep.png" class="round" width="100px">
+                    <h3>Fitriansyah Eka Putra</h3>
+                    <h6>Condong catur, Sleman, D.I.Y</h6>
+                    <p>Tertekan developer and <br/>tidur</p>      
+                    <div class="skills">
+                        <h6>Skills</h6>
+                        <ul>
+                            <li>Makan</li>
+                            <li>Tidur</li>
+                            <li>Bengong</li>
+                            <li>Ngising</li>
+                            <li>Ngorok</li>
+                            <li>Sleepwalking</li>
+                            <li>Melamun</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &#169; 2022, Fitriansyah Eka Putra</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
